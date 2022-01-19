@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{{title}} - All Orders</title>
+</head>
+<header>
+    <h1>Book Shop</h1>
+    <h2>You guessed it...we sell books!</h2>
+
+</header>
+<body>
+    
+    <section class="heading">
+    <h1>Customer Orders</h1>
+    </section>
+
+    <section class="gallery">
+    {% for order in activeOrders %}
+    <div>
+        <p>
+            <b>Name:</b> <a href="orders/{{activeOrders.index(order)}}">{{order.customer_name}}</a> <br>
+            <b>Order Date:</b> {{order.order_date}} <br>
+            <b>Quantity:</b> {{order.quantity}} <br>
+            <b>Title:</b> {{order.title}} <br>
+            <b>Author:</b> {{order.author}} <br>
+        </p>
+        <br>
+    </div>
+    {% endfor %}
+    </section>
+    
+</body>
+
+<footer>
+    <h4>Brought to you by books 2021</h4>
+</footer>
+</html>

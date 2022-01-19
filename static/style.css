@@ -1,0 +1,44 @@
+body {
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0%;
+    padding: 0%;
+    top: 0;
+    bottom: 0%;
+    height: 100%;
+}
+
+.gallery {
+    text-align: left;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    max-width: 100%;
+    border-radius: 5px;
+    position: relative;
+   
+}
+
+header {
+    text-align: center;
+    background-color: blueviolet;
+    margin: 0%;
+    padding: 20px;
+    top: 0%;
+    bottom: 0%;
+    height: 100%;
+}
+
+
+footer {
+    background-color: blueviolet;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+}
